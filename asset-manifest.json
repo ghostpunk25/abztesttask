@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/abztesttask/static/css/main.e90306a5.css",
+    "main.css": "/abztesttask/static/css/main.a43da1ef.css",
     "main.js": "/abztesttask/static/js/main.df55ebd0.js",
     "index.html": "/abztesttask/index.html",
-    "main.e90306a5.css.map": "/abztesttask/static/css/main.e90306a5.css.map",
+    "main.a43da1ef.css.map": "/abztesttask/static/css/main.a43da1ef.css.map",
     "main.df55ebd0.js.map": "/abztesttask/static/js/main.df55ebd0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e90306a5.css",
+    "static/css/main.a43da1ef.css",
     "static/js/main.df55ebd0.js"
   ]
 }
