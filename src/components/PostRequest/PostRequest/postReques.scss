@@ -1,0 +1,23 @@
+.post-request-pending {}
+
+.post-request-rejected {}
+
+.post-request {
+   padding-bottom: 100px;
+   // .post-request__container
+
+   &__container {}
+
+   // .post-request__body
+
+   &__body {}
+
+   // .post-request__title
+
+   &__title {
+      margin-bottom: 50px;
+      text-align: center;
+   }
+}
+
+.title {}

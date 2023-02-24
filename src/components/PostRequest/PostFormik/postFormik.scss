@@ -1,0 +1,233 @@
+.post-formik {
+   display: flex;
+   flex-direction: column;
+   max-width: 380px;
+   margin: 0 auto;
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &:not(:first-child) {
+         margin-top: 50px;
+      }
+   }
+
+   // .post-formik__input
+
+   &__input {
+      border: 1px solid #D0CFCF;
+      padding: 14px 16px;
+      border-radius: 4px;
+      background: transparent;
+      outline: none;
+
+      &_error {
+         border: 2px solid $errorColor;
+      }
+
+      &:invalid {
+         border: 1px solid $errorColor;
+      }
+
+      &:focus+,
+      &:not(:placeholder-shown)+ {
+         .post-formik__placeholder {
+            top: -12px;
+            font-size: 12px;
+            background: $backgroundColor;
+            z-index: 1;
+            padding: 0px 5px;
+         }
+      }
+
+      &:not(:placeholder-shown)+ {
+         .post-formik__placeholder {
+            top: -12px;
+            font-size: 12px;
+            background: $backgroundColor;
+            z-index: 1;
+            padding: 0px 5px;
+         }
+      }
+   }
+
+   &__placeholder {
+      position: absolute;
+      top: 14px;
+      left: 16px;
+      z-index: -1;
+      color: #7E7E7E;
+      transition: all 0.3s ease 0s;
+
+      &_error {
+         color: $errorColor;
+      }
+   }
+
+   // .post-formik__error-input
+
+   &__error-input {
+      position: absolute;
+      bottom: -25px;
+      left: 16px;
+      color: $errorColor;
+      font-size: 12px;
+   }
+
+   // .post-formik__box
+
+   &__box {
+      display: flex;
+      flex-direction: column;
+      margin: 43px 0px 47px;
+      position: relative;
+   }
+
+   // .post-formik__text
+
+   &__text {}
+
+   // .post-formik__label
+
+   &__label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+
+      &:not(:last-child) {
+         margin-bottom: 7px;
+      }
+   }
+
+   // .post-formik__radio
+
+   &__radio {
+      width: 0;
+      height: 0;
+      position: absolute;
+      opacity: 0;
+
+      &:checked+ {
+         .post-formik__custom-radio:before {
+            transform: translate(-50%, -50%) scale(1);
+         }
+
+         .post-formik__custom-radio {
+            border: 1px solid $secondaryColor;
+         }
+      }
+   }
+
+
+   &__custom-radio {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 1px solid #D0CFCF;
+      border-radius: 50%;
+      margin-right: 12px;
+      vertical-align: middle;
+      position: relative;
+
+      &_error {
+         border: 2px solid $errorColor;
+      }
+
+      &::before {
+         content: '';
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         background: $secondaryColor;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%) scale(0);
+         transition: all 0.3s ease 0s;
+      }
+   }
+
+   // .post-formik__radio-error
+
+   &__radio-error {
+      position: absolute;
+      bottom: -15px;
+      left: 16px;
+      color: $errorColor;
+      font-size: 12px;
+   }
+
+   &__block {
+      display: flex;
+      margin-bottom: 50px;
+      position: relative;
+   }
+
+   &__upload {
+      flex: 1 1 100%;
+      border: 1px solid #D0CFCF;
+      border-radius: 4px;
+      white-space: nowrap;
+      color: #7E7E7E;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-right: 10px;
+
+      &_error {
+         border: 2px solid $errorColor;
+      }
+   }
+
+   &__file {
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+   }
+
+   &__custom-file {
+      width: 83px;
+      border: 1px solid rgba(0, 0, 0, 0.87);
+      padding: 14px 16px;
+      border-radius: 4px 0px 0px 4px;
+      background: $backgroundColor;
+      display: inline-block;
+      margin-right: 16px;
+      color: rgba(0, 0, 0, 0.87);
+      cursor: pointer;
+
+      &_error {
+         border: 0px;
+         border-right: 2px solid $errorColor;
+      }
+   }
+
+   &__file-error {
+      position: absolute;
+      bottom: -25px;
+      left: 16px;
+      color: $errorColor;
+      font-size: 12px;
+   }
+
+   // .post-formik__button
+
+   &__button {
+      margin: 0 auto;
+
+      &_disabled {
+         background: #B4B4B4;
+         color: #fff;
+
+         &:hover {
+            background: #B4B4B4;
+         }
+      }
+   }
+}
+
+.button {}

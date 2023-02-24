@@ -1,0 +1,62 @@
+Основні команді терміналу:
+-путь (pwd)
+-лист (ls)
+-навигация (cd)
+-очистка `clear` или `control + l`
+=создание файлов (touch)
+-создание папок (mkdir)
+=переименование/перемещение (mv)
+-удаление (rm)
+
+//Установка React
+npx create-react-app .
+
+// Для путей
+1. Создать файл jsconfig.json в корни проекта
+2. Внутри файла прописать:
+{
+"compilerOptions": {
+"baseUrl": "src"
+},
+"include": ["src"]
+}
+
+Установка с Deploy
+
+1. Создаем новый репозиторий. На открывшеся странице нажимаем на кнопку Set up in Desktop.
+2. Далее на ПК заходим в создануую папку с названием репозитория и в нее устанавливаем React.
+3. Переходим на Gh-Desktop и пушим наше приложение.
+4. Открываем файл package.json добавляем послe "name" поле "homepage": "https://Логин.github.io/Имя репозитория/",
+5. Пишем команду в терминале npm install gh-pages
+6. В файле package.json в отладке добавляем две команды "deploy": "gh-pages -d build", "predeploy": "npm run build"
+7. Теперь при команде npm run deploy, файлы проекта будут размещаться в удаленном репозитории на GitHub в ветке gh-pages.
+
+
+// Установка иконок https://react-icons.github.io/react-icons
+npm install react-icons
+
+// Установка alert custom https://www.npmjs.com/package/notiflix
+npm i notiflix
+
+//Установка CSS в JS:
+(Styled-components) https://styled-components.com/docs/basics#installation
+//Установка Styled System для создания однотипных контейнеров https://styled-system.com/table
+npm i styled-system styled-components
+
+//Для форм: https://formik.org/
+npm install formik
+
+//Валидацыя форм: https://www.npmjs.com/package/yup
+npm install yup
+
+// Библиотека для работы с http-запросами https://axios-http.com/
+npm install axios
+
+//React Router пакет для маршрутизации https://reactrouter.com/en/main
+npm install react-router-dom
+
+// Redux Toolkit https://redux-toolkit.js.org/
+npm install @reduxjs/toolkit react-redux
+
+// Redux Persist для локального сохранения данных https://www.npmjs.com/package/redux-persist#quickstart
+npm install redux-persist

@@ -1,0 +1,47 @@
+.main-page {
+   min-height: 100vh;
+   display: flex;
+   color: #fff;
+   // .main-page__container
+
+   &__container {
+      padding: 40px 16px 71px;
+      background: url('/img/mainPage/field__bg.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      justify-content: center;
+      align-items: center;
+   }
+
+   // .main-page__body
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 380px;
+      margin: 0 auto;
+   }
+
+   // .main-page__title
+
+   &__title {
+      margin-bottom: 21px;
+      text-align: center;
+   }
+
+   // .main-page__text
+
+   &__text {
+      margin-bottom: 32px;
+      text-align: center;
+   }
+
+   // .main-page__button
+
+   &__button {}
+}
+
+.btn {}

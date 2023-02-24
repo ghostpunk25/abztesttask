@@ -1,0 +1,31 @@
+.header {
+   padding: 13px 0px;
+   // .header__container
+
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+   }
+
+   // .header__logo
+
+   &__logo {}
+
+   // .header__picture
+
+   &__picture {}
+
+   // .header__control
+
+   &__control {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+
+   // .header__button
+
+   &__button {}
+}

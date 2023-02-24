@@ -1,0 +1,101 @@
+.get-request {
+   padding: 140px 0px;
+   // .get-request__container
+
+   &__container {}
+
+   // .get-request__body
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+   }
+
+   // .get-request__title
+
+   &__title {
+      margin-bottom: 50px;
+      text-align: center;
+   }
+
+   // .get-request__cards
+
+   &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(282px, 370px));
+      grid-template-rows: 1fr;
+      gap: 29px;
+      margin-bottom: 50px;
+      justify-content: center;
+
+      @media (max-width:$tablet) {
+         grid-template-columns: repeat(2, minmax(282px, 370px));
+      }
+
+      @media (max-width:$mobile) {
+         grid-template-columns: repeat(1, minmax(282px, 370px));
+      }
+   }
+
+   // .get-request__card
+
+   &__card {}
+
+   // .get-request__button
+
+   &__button {
+      width: 120px;
+      margin: 0 auto
+   }
+}
+
+.title {}
+
+.card-user {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   background: #fff;
+
+   // .card-user__photo
+
+   &__photo {
+      margin-bottom: 20px;
+      flex: 1 1 auto;
+   }
+
+   // .card-user__img
+
+   &__img {
+      border-radius: 100%;
+
+   }
+
+   // .card-user__name
+
+   &__name {
+      margin-bottom: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+   }
+
+   // .card-user__position
+
+   &__position {}
+
+   // .card-user__email
+
+   &__email {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+   }
+
+   // .card-user__phone
+
+   &__phone {}
+}
